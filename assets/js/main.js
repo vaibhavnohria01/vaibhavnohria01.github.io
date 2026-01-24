@@ -282,30 +282,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })();
 
-// ===== Projects: 1 tap open, 1 tap close (simple + reliable) =====
+// Project "Know more" toggle
 document.addEventListener("DOMContentLoaded", () => {
-  const portfolio = document.querySelector("#portfolio");
-  if (!portfolio) return;
-
   let openTile = null;
 
-  portfolio.addEventListener("pointerup", (e) => {
-    // Don't toggle when tapping buttons/links
-    if (e.target.closest("a, button")) return;
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".project-toggle");
+    if (!btn) return;
 
-    const tile = e.target.closest(".project-tile");
+    const tile = btn.closest(".project-tile");
     if (!tile) return;
 
-    // Same tile -> close
+    // same tile → close
     if (openTile === tile) {
       tile.classList.remove("is-open");
       openTile = null;
       return;
     }
 
-    // Different tile -> close previous + open new
-    if (openTile) openTile.classList.remove("is-open");
+    // close previous
+    if (openTile) {
+      openTile.classList.remove("is-open");
+    }
 
+    // open new
     tile.classList.add("is-open");
     openTile = tile;
   });
