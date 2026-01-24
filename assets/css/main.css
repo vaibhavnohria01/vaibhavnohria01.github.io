@@ -1434,11 +1434,25 @@ section,
 .flip-card-front {
   transform: rotateY(0deg) translateZ(1px);
   -webkit-transform: rotateY(0deg) translateZ(1px);
+    transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  will-change: transform, opacity;
 }
 
 .flip-card-back {
   transform: rotateY(180deg) translateZ(1px);
   -webkit-transform: rotateY(180deg) translateZ(1px);
+    transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  will-change: transform, opacity;
 }
 
 /* Safari/Android fix: hide backface for nested text/icons too */
@@ -1482,6 +1496,15 @@ section,
   height: 60px;
   object-fit: contain;
   filter: drop-shadow(0 10px 22px rgba(0,0,0,0.22));
+  .flip-card-front img,
+.flip-card-front svg,
+.flip-card-front .service-icon,
+.flip-card-front .logo-wrapper {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(2px);
+  -webkit-transform: translateZ(2px);
+}
 }
 
 .flip-card-front h3 {
