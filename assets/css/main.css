@@ -1657,4 +1657,21 @@ section,
   color: var(--default-color);
 }
 
+/* ✅ Mobile: open/close must be controlled ONLY by .is-open */
+@media (hover: none), (pointer: coarse) {
+
+  /* Stop sticky hover from forcing the panel open/closed */
+  .portfolio .project-tile:hover .project-hover {
+    opacity: 0;
+    bottom: -100%;
+  }
+
+  /* Force open state to win on mobile */
+  .portfolio .project-tile.is-open .project-hover {
+    opacity: 1 !important;
+    bottom: 12px !important;
+  }
+}
+
+
 
