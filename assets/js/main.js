@@ -57,48 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Projects: 1 tap open, 1 tap close (mobile-friendly, works with Isotope)
-document.addEventListener("DOMContentLoaded", () => {
-  const portfolioSection = document.querySelector("#portfolio");
-  if (!portfolioSection) return;
-
-  // More reliable touch detection than pointer: coarse
-  const isTouch =
-    "ontouchstart" in window ||
-    navigator.maxTouchPoints > 0 ||
-    window.matchMedia("(hover: none)").matches;
-
-  let openTile = null;
-
-  const handler = (e) => {
-    // Let links/buttons work normally
-    if (e.target.closest("a, button")) return;
-
-    const tile = e.target.closest(".project-tile");
-    if (!tile) return;
-
-    // Same tile -> close
-    if (openTile === tile) {
-      tile.classList.remove("is-open");
-      openTile = null;
-      return;
-    }
-
-    // Different tile -> close previous, open new
-    if (openTile) openTile.classList.remove("is-open");
-
-    tile.classList.add("is-open");
-    openTile = tile;
-  };
-
-  // Use touchend on touch devices (instant), click otherwise
-  if (isTouch) {
-    portfolioSection.addEventListener("touchend", handler, { passive: true });
-  } else {
-    portfolioSection.addEventListener("click", handler);
-  }
-});
-
 
 (function() {
   "use strict";
@@ -323,3 +281,44 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// ===== Projects: reliable tap open/close on mobile (Pointer Events) =====
+document.addEventListener("DOMContentLoaded", () => {
+  const portfolio = document.querySelector("#portfolio");
+  if (!portfolio) return;
+
+  let openTile = null;
+  let lastToggleTs = 0;
+
+  function toggleTileFromEvent(e) {
+    // Don’t toggle when clicking buttons/links
+    if (e.target.closest("a, button")) return;
+
+    const tile = e.target.closest(".project-tile");
+    if (!tile) return;
+
+    // Guard against duplicate events (pointerup + click firing)
+    const now = Date.now();
+    if (now - lastToggleTs < 350) return;
+    lastToggleTs = now;
+
+    // Same tile -> close
+    if (openTile === tile) {
+      tile.classList.remove("is-open");
+      openTile = null;
+      return;
+    }
+
+    // Different tile -> close old + open new
+    if (openTile) openTile.classList.remove("is-open");
+
+    tile.classList.add("is-open");
+    openTile = tile;
+  }
+
+  // Pointer events are best on modern mobile browsers
+  portfolio.addEventListener("pointerup", toggleTileFromEvent);
+
+  // Fallback for older browsers / edge cases
+  portfolio.addEventListener("click", toggleTileFromEvent);
+});
