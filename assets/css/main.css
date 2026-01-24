@@ -872,6 +872,13 @@ section,
   bottom: 12px;
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .portfolio .project-tile:hover .project-hover {
+    opacity: 0;
+    bottom: -100%;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Services Section
