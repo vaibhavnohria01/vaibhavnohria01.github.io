@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - MyResume Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Title_Logo.png" rel="icon">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Skills</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div id="vanta-bg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;"></div>
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Vaibhav Nohria</h2>
+            <p>I am <span class="typed" data-typed-items="a Designer, a Developer, a Freelancer, a Writer, a Data Scientist"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://wa.me/61481536899"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://github.com/vaibhavnohria01"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/vaibhav-nohria-70549416b/ "><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/vaibhavnohria?igsh=cGg2M3JvNjRiczdt&utm_source=qr"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I am passionate about using technology to simplify lives, enhance user experiences, and drive data-informed decisions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/Emoji.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Software Engineer, Data Analyst &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              Holds a strong foundation in computing and data driven decision-making. 
+              With a Master's degree in Computing from the Australian National University, 
+              I have built a diverse skill set spanning different areas, expanding my horizon for new challenges.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>18 May 1999</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+61481536899</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Belconnen, ACT, Australia</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i><strong>Age:</strong><span id="age"></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Highest Qualification:</strong> <span>Master's Degree</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>nohriavaibhav13@gmail.com</span></li>
+                  
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              My goal is to create smart, scalable, and user-focused solutions that solve real-world problems. 
+              Whether I’m building a web app, analyzing data to uncover insights, or optimizing user experiences, I bring creativity, technical proficiency, 
+              and a collaborative spirit to every project.
+
+              I’m particularly interested in roles where I can apply my analytical and programming skills to drive innovation and support strategic decisions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+     <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Technologies</h2>
+        <div style="line-height: 1.6; margin-bottom: 1em;">
+          <p>
+            As a recent graduate in Computing, I have developed a strong technical foundation through a combination of academic coursework and hands-on project experience. My skill set spans programming, data analysis, software development, and IT support, with a focus on applying theoretical knowledge to solve practical problems.
+          </p>
+          <p>
+            I have experience working with databases, performing data-driven decision-making, managing version control, and contributing to collaborative development environments. I approach challenges with curiosity, analytical thinking, and a commitment to continuous improvement. Motivated to grow professionally, I am eager to apply and expand these skills in dynamic roles that drive innovation and create meaningful impact.
+          </p>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-git position-relative">
+              <div class="flip-card" role="button" aria-label="Git card">
+                <div class="flip-card-inner">
+                  <!-- FRONT -->
+                    <div class="flip-card-front">
+                      <div class="icon">
+                        <svg width="110" height="110" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <defs>
+                            <!-- Git orange theme gradient -->
+                             <linearGradient id="gitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" stop-color="#FF7A18"/>
+                              <stop offset="55%" stop-color="#F1502F"/>
+                              <stop offset="100%" stop-color="#D63A1C"/>
+                             </linearGradient>
+                          </defs>
+                          <path stroke="none" stroke-width="0" fill="url(#gitGradient)" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                          </path>  
+                        </svg>
+                        <!-- Bigger centered logo -->
+                        <div class="logo-wrapper">
+                          <img src="assets/img/Git_icon.svg.png" alt="Git" class="service-icon">
+                        </div>
+                      </div>
+                      <a href="#" class="stretched-link">
+                        <h3>Git</h3>
+                      </a>
+                      <p>Version control for clean collaboration, safe releases, and confident code changes.</p>
+                      <div class="hint-text">
+                        Know more <span class="arrow">↻</span>
+                      </div>
+                    </div>
+
+                    <!-- BACK -->
+                    <div class="flip-card-back">
+                      <h3>Git: What I use</h3>
+                      <ul class="git-skill-list">
+                        <li>Branching strategies </li>
+                        <li>Pull requests & code reviews</li>
+                        <li>Merge, rebase, squash</li>
+                        <li>Conflict resolution</li>
+                        <li>Tags & release versioning</li>
+                        <li>GitHub issues & project boards</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-git position-relative">
+              <div class="flip-card" role="button" aria-label="Machine Learning card">
+                <div class="flip-card-inner">
+                  <!-- FRONT -->
+                   <div class="flip-card-front">
+                    <div class="icon">
+                      <svg width="110" height="110" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke="none" stroke-width="0" fill="url(#mlGradient)" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                        </path>
+                      </svg>
+                    
+                      <div class="logo-wrapper">
+                      
+                         <img src="assets/img/MLDL.png" alt="Machine Learning" class="service-icon">
+                      </div> 
+                    </div>
+
+                    <a href="a" class="stretched-link">
+                      <h3>Machine Learning & Deep Learning</h3>
+                    </a>
+                    <p>Building data-driven models to learn patterns, predict outcomes, and automate decisions.</p>
+                    <div class="hint-text">
+                      Know more <span class="arrow">↻</span>
+                    </div>
+                   </div>
+
+                   <!-- BACK -->
+                   <div class="flip-card-back">
+                    <h3>ML & DL: What I use</h3>
+                    <ul class="git-skill-list">
+                      <li>Supervised & unsupervised learning</li>
+                      <li>Regression, classification, clustering</li>
+                      <li>Neural networks & deep learning</li>
+                      <li>Model evaluation & tuning</li>
+                      <li>Feature engineering</li>
+                      <li>Scikit-learn, TensorFlow / PyTorch</li>
+                    </ul>
+                   </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-git position-relative">
+              <div class="flip-card" role="button" aria-label="Web Development card">
+                <div class="flip-card-inner">
+                  <!-- FRONT -->
+                   <div class="flip-card-front">
+                    <div class="icon">
+                      <svg width="110" height="110" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke="none" stroke-width="0" fill="url(#mlGradient)" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                        </path>
+                      </svg>
+                     
+                      <div class="logo-wrapper">
+                      
+                         <img src="assets/img/webdev.png" alt="Web Developent" class="service-icon">
+                      </div> 
+                    </div>
+
+                    <a href="a" class="stretched-link">
+                      <h3>Web Development</h3>
+                    </a>
+                    <p>Building responsive, accessible, and user-focused web applications.</p>
+                    <div class="hint-text">
+                      Know more <span class="arrow">↻</span>
+                    </div>
+                   </div>
+
+                   <!-- BACK -->
+                   <div class="flip-card-back">
+                    <h3>Web Development: What I use</h3>
+                    <ul class="git-skill-list">
+                      <li>HTML5, CSS3, JavaScript</li>
+                      <li>Responsive & mobile-first design</li>
+                      <li>Bootstrap & UI layouts</li>
+                      <li>Frontend interactivity</li>
+                      <li>Basic backend integration</li>
+                      <li>REST APIs & JSON</li>
+                    </ul>
+                   </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-git position-relative">
+              <div class="flip-card" role="button" aria-label="Data Science card">
+                <div class="flip-card-inner">
+                  <!-- FRONT -->
+                   <div class="flip-card-front">
+                    <div class="icon">
+                      <svg width="110" height="110" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke="none" stroke-width="0" fill="url(dsGradient)" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                        </path>
+                      </svg>
+                   
+                      <div class="logo-wrapper">
+                      
+                         <img src="assets/img/DataScience.png" alt="Data Science" class="service-icon">
+                      </div> 
+                    </div>
+
+                    <a href="a" class="stretched-link">
+                      <h3>Data Science</h3>
+                    </a>
+                    <p>Transforming raw data into actionable insights through analysis, modelling, and visualisation.</p>
+                    <div class="hint-text">
+                      Know more <span class="arrow">↻</span>
+                    </div>
+                   </div>
+
+                   <!-- BACK -->
+                   <div class="flip-card-back">
+                    <h3>Data Science: What I use</h3>
+                    <ul class="git-skill-list">
+                      <li>Data cleaning & preprocessing</li>
+                      <li>Exploratory data analysis (EDA)</li>
+                      <li>Statistical analysis & hypothesis testing</li>
+                      <li>Feature engineering</li>
+                      <li>Data visualisation & storytelling</li>
+                      <li>Pandas, NumPy, Matplotlib, Seaborn</li>
+                    </ul>
+                   </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-git position-relative">
+              <div class="flip-card" role="button" aria-label="Animation card">
+                <div class="flip-card-inner">
+                  <!-- FRONT -->
+                   <div class="flip-card-front">
+                    <div class="icon">
+                      <svg width="110" height="110" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke="none" stroke-width="0" fill="url(dsGradient)" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                        </path>
+                      </svg>
+                      
+                      <div class="logo-wrapper">
+                      
+                         <img src="assets/img/animation.svg" alt="Animation" class="service-icon">
+                      </div> 
+                    </div>
+
+                    <a href="a" class="stretched-link">
+                      <h3>Animation</h3>
+                    </a>
+                    <p>Desinging fun & creative graphics using different softwares.</p>
+                    <div class="hint-text">
+                      Know more <span class="arrow">↻</span>
+                    </div>
+                   </div>
+
+                   <!-- BACK -->
+                   <div class="flip-card-back">
+                    <h3>Animation: What I use</h3>
+                    <ul class="git-skill-list">
+                      <li>Sony Vegas Pro</li>
+                      <li>Adobe After Effects</li>
+                      <li>Photoshop (basics)</li>
+                    </ul>
+                   </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Driven by data. Built with code. Designed for impact.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Vaibhav Nohria</h4>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Belconnen, ACT, 2617, Australia</li>
+                <li>(+61) 481536899</li>
+                <li>nohriavaibhav13@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Computing - Data Science and Professional Computing </h4>
+              <h5>2022 - 2025</h5>
+              <p><em>Australian National University, Canberra, ACT</em></p> 
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Technology - Computer Science Engineering</h4>
+              <h5>2017 - 2021</h5>
+              <p><em>Guru Gobind Singh Indraprastha University, India</em></p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+  <h3 class="resume-title">Professional Experience</h3>
+
+  <!-- Resume Item -->
+  <div class="resume-item">
+    <h4>Customer Service Manager</h4>
+    <h5>03/2023 – Present</h5>
+    <p><em>McDonald’s • Bruce, Australia</em></p>
+    <ul>
+      <li>Analysed daily operational and shift performance data using digital scheduling and reporting systems.</li>
+      <li>Maintained accurate end-of-day reports to support operational planning and staffing decisions.</li>
+      <li>Logged and tracked customer incidents, identifying trends to improve service quality and efficiency.</li>
+      <li>Collaborated with cross-functional teams to ensure compliance with operational and safety standards.</li>
+      <li>Trained and mentored team members, reinforcing adherence to standard operating procedures and data accuracy.</li>
+    </ul>
+  </div>
+  <!-- End Resume Item -->
+
+  <!-- Resume Item -->
+  <div class="resume-item">
+    <h4>Data Scientist</h4>
+    <h5>07/2021 – 04/2022</h5>
+    <p><em>Sapio Analytics • India</em></p>
+    <ul>
+      <li>Delivered computer vision and data analytics solutions using large-scale video and image datasets.</li>
+      <li>Implemented face detection, age and gender prediction, and footfall analytics using Python.</li>
+      <li>Processed and analysed structured and unstructured data to generate actionable insights.</li>
+      <li>Supported marketing and operations teams with timely analytical reporting.</li>
+      <li>Translated complex analytical outputs into clear, business-focused insights for stakeholders.</li>
+    </ul>
+  </div>
+  <!-- End Resume Item -->
+
+  <!-- Resume Item -->
+  <div class="resume-item">
+    <h4>Python Developer</h4>
+    <h5>05/2020 – 03/2021</h5>
+    <p><em>Internity Foundation • India</em></p>
+    <ul>
+      <li>Conducted statistical analysis on large datasets to identify trends, patterns, and anomalies.</li>
+      <li>Developed Python-based data processing and analysis workflows.</li>
+      <li>Assisted with data cleaning, transformation, and exploratory data analysis.</li>
+      <li>Supported senior team members with analytics deliverables and reporting tasks.</li>
+    </ul>
+  </div>
+  <!-- End Resume Item -->
+
+</div>
+   
+ <div class="resume-download-wrap">
+  <a class="resume-download-btn" href="assets/VaibhavNohriaAPS.pdf" download>
+    <i class="bi bi-download"></i>
+    Download Resume
+  </a>
+</div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Projects Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Projects</h2>
+    <p>Driven by data. Built with code. Designed for impact.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <!-- Filters -->
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">Apps</li>
+        <li data-filter=".filter-product">Websites</li>
+        <li data-filter=".filter-branding">Analytics</li>
+      </ul><!-- End Filters -->
+
+      <!-- Grid -->
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Animal Kingdom (Apps) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="project-tile">
+
+            <!-- FRONT (always visible) -->
+            <div class="project-front">
+              <div>
+                <h4 class="project-title">Mobile Application</h4>
+                <p class="project-subtitle">API-driven Android build</p>
+              </div>
+
+              <!-- icon badge -->
+              <span class="project-badge badge-icon badge-app" aria-label="Mobile app badge">
+                <i class="bi bi-phone"></i>
+              </span>
+            </div>
+
+            <!-- HOVER REVEAL -->
+            <div class="project-hover">
+              <h4 class="hover-title">Animal Kingdom (Android Application)</h4>
+
+              <p class="project-desc">
+                Built a scalable Android application integrating secure APIs. Designed structured data models and implemented efficient data retrieval.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Android</span>
+                <span class="tag">API Integration</span>
+                <span class="tag">Data Models</span>
+                <span class="tag">Scalable Design</span>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Item -->
+
+
+        <!-- ATO Data Analysis (Analytics) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="project-tile">
+
+            <div class="project-front">
+              <div>
+                <h4 class="project-title">Data Analytics Project</h4>
+                <p class="project-subtitle">Insights & dashboards</p>
+              </div>
+
+              <span class="project-badge badge-icon badge-analytics" aria-label="Analytics badge">
+                <i class="bi bi-bar-chart-line"></i>
+              </span>
+            </div>
+
+            <div class="project-hover">
+              <h4 class="hover-title">ATO Data Analysis Project</h4>
+
+              <p class="project-desc">
+                Analysed Australian taxation datasets using Python and SQL. Created visual dashboards to communicate insights and trends.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Data Cleaning</span>
+                <span class="tag">Dashboards</span>
+                <span class="tag">Regression models</span>
+              </div>
+
+            </div>
+
+          </div>
+        </div><!-- End Item -->
+
+
+        <!-- Flavorful Voyage (Websites) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="project-tile">
+
+            <div class="project-front">
+              <div>
+                <h4 class="project-title">Web Application</h4>
+                <p class="project-subtitle">Interactive map experience</p>
+              </div>
+
+              <span class="project-badge badge-icon badge-web" aria-label="Web badge">
+                <i class="bi bi-globe"></i>
+              </span>
+            </div>
+
+            <div class="project-hover">
+              <h4 class="hover-title">Flavorful Voyage</h4>
+
+              <p class="project-desc">
+                Built a responsive front-end website using HTML, CSS, and JavaScript with an interactive map and embedded media to enhance engagement.
+                Applied user-focused design to present structured regional content clearly for information discovery and usability.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Interactive Map</span>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div><!-- End Item -->
+
+      </div><!-- End Grid -->
+
+    </div>
+  </div>
+
+</section><!-- /Projects Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>I'm always open to new opportunities, meaningful collaborations, or any questions you may have — feel free to get in touch.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>195/39 Sentinel Building, Benjamin Way, Belconnen ACT, 2617</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>(+61)481536899</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Me</h3>
+                <p>nohriavaibhav13@gmail.com</p>
+                      <a href="https://forms.gle/4fQkNcSRiJWPaQUTA" target="_blank" class="btn btn-primary mt-3" style="padding: 8px 16px; border-radius: 5px; display: inline-block;">
+                       Contact Me via Form
+                      </a>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.091365455876!2d149.06698577563018!3d-35.237422927444236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d8e6fcde499%3A0xeae5d4f72ae28b7d!2s195%2F15%20Sentinel%20Building%2C%20Benjamin%20Way%2C%20Belconnen%20ACT%202617!5e0!3m2!1sen!2sau!4v1717648900000!5m2!1sen!2sau"
+              width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <!-- Open in Google Maps Button -->
+          <div class="text-center mt-3">
+          <a href="https://www.google.com/maps/place/195%2F15+Sentinel+Building,+Benjamin+Way,+Belconnen+ACT+2617"
+            target="_blank" class="btn btn-outline-primary">
+            Open in Google Maps
+          </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Vaibhav Nohria</h3>
+      <p>Data Scientist, Software Engineer, Web Developer and an AI enthusiast.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://wa.me/61481536899"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://github.com/vaibhavnohria01"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/vaibhav-nohria-70549416b/ "><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/vaibhavnohria?igsh=cGg2M3JvNjRiczdt&utm_source=qr"><i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="container">
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script> 
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  function calculateAge(birthDate) {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+    const dayDifference = today.getDate() - birthDate.getDate();
+
+    // If birthday hasn't occurred yet this year, subtract 1
+    if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+      age--;
+    }
+
+    return age;
+  }
+
+  const birthDate = new Date(1999, 4, 18); // Month is 0-indexed (May = 4)
+
+  document.getElementById("age").textContent = calculateAge(birthDate);
+</script>
+
+</body>
+
+</html>
