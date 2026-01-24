@@ -1673,31 +1673,6 @@ section,
   }
 }
 
-/* Know more button */
-.project-toggle {
-  margin-top: 14px;
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: none;
-  background: var(--accent-color);
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-/* Hidden by default */
-.project-details {
-  display: none;
-  margin-top: 14px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(0,0,0,0.08);
-}
-
-/* Show when open */
-.project-tile.is-open .project-details {
-  display: block;
-}
 
 
 
