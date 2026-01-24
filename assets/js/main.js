@@ -256,21 +256,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const tiles = document.querySelectorAll(".portfolio .project-tile");
   const isTouch = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
 
   if (!isTouch) return;
 
+  let openTile = null; // track currently open tile
+
   tiles.forEach(tile => {
     tile.addEventListener("click", (e) => {
-      // If user clicks a link/button, don't toggle the tile (let the link work)
+      // allow buttons/links to work normally
       if (e.target.closest("a, button")) return;
 
-      tile.classList.toggle("is-open");
+      // CASE 1: tapping the same tile → close it
+      if (openTile === tile) {
+        tile.classList.remove("is-open");
+        openTile = null;
+        return;
+      }
+
+      // CASE 2: tapping a different tile
+      if (openTile) {
+        openTile.classList.remove("is-open");
+      }
+
+      tile.classList.add("is-open");
+      openTile = tile;
     });
   });
 });
+
 
 
   /**
