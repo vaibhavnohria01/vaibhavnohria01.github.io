@@ -1427,7 +1427,32 @@ section,
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transform-style: preserve-3d;
 }
+
+/* FIX: prevent mirrored/ghost text bleeding through on flip (mobile browsers) */
+.flip-card-front {
+  transform: rotateY(0deg) translateZ(1px);
+  -webkit-transform: rotateY(0deg) translateZ(1px);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg) translateZ(1px);
+  -webkit-transform: rotateY(180deg) translateZ(1px);
+}
+
+/* Safari/Android fix: hide backface for nested text/icons too */
+.flip-card-front *,
+.flip-card-back * {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* strengthen 3D behavior on Safari */
+.flip-card-inner {
+  -webkit-transform-style: preserve-3d;
+}
+
 
 /* FRONT */
 .flip-card-front .icon {
