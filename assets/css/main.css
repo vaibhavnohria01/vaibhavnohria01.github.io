@@ -1394,7 +1394,7 @@ section,
 /* =========================
    FLIP CARD BASE
 ========================== */
-.service-item.item-git {
+.services .service-item {
   perspective: 1200px;
   border-radius: 18px;
 }
@@ -1515,7 +1515,7 @@ section,
    DESKTOP: HOVER FLIP
 ========================== */
 @media (hover: hover) and (pointer: fine) {
-  .service-item.item-git:hover .flip-card-inner {
+  .services .service-item:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
 }
@@ -1528,8 +1528,13 @@ section,
     cursor: pointer;
   }
 
-  .service-item.item-git.is-flipped .flip-card-inner {
+  .services .service-item.is-flipped .flip-card-inner {
     transform: rotateY(180deg);
+  }
+
+    .portfolio .project-tile:hover .project-hover {
+    opacity: 0;
+    bottom: -100%;
   }
 }
 

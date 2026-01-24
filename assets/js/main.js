@@ -25,31 +25,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".service-item.item-git");
+  const serviceItems = document.querySelectorAll(".services .service-item");
   const isTouch = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
 
   if (!isTouch) return;
 
-  cards.forEach(card => {
+  serviceItems.forEach(item => {
+    // Only apply if it's actually a flip-card tile
+    if (!item.querySelector(".flip-card-inner")) return;
+
     let touchMoved = false;
 
-    card.addEventListener("touchmove", () => {
+    item.addEventListener("touchmove", () => {
       touchMoved = true;
     }, { passive: true });
 
-    card.addEventListener("touchend", () => {
+    item.addEventListener("touchend", (e) => {
       if (!touchMoved) {
-        card.classList.toggle("is-flipped");
+        e.preventDefault();
+        item.classList.toggle("is-flipped");
       }
       touchMoved = false;
-    });
+    }, { passive: false });
 
-    // fallback click for some browsers
-    card.addEventListener("click", () => {
-      card.classList.toggle("is-flipped");
+    // fallback click
+    item.addEventListener("click", (e) => {
+      // if they clicked a link/button, allow it
+      if (e.target.closest("a, button")) return;
+      item.classList.toggle("is-flipped");
     });
   });
 });
+
 
 (function() {
   "use strict";
